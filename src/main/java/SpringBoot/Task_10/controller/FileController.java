@@ -20,7 +20,6 @@ public class FileController {
 
     @PostMapping("/upload")
     public ResponseEntity<String> uploadFile(@RequestPart("file") MultipartFile file) {
-        // Logging for monitoring
         logger.info("External API call: Processing file [{}]", file.getOriginalFilename());
 
         try {
